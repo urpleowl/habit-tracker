@@ -1,0 +1,52 @@
+{
+  "name": "@habit-tracker/ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsc --noEmit --watch",
+    "build": "tsc --noEmit",
+    "lint": "eslint src --max-warnings=0",
+    "lint:fix": "eslint src --fix",
+    "test": "jest --config jest.config.cjs",
+    "test:coverage": "jest --config jest.config.cjs --coverage"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "eslint": "^9.39.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "es-iterator-helpers": "1.2.2",
+    "iterator.prototype": "1.1.5",
+    "jsx-ast-utils": "3.3.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "ts-jest": "^29.4.15",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.73.0",
+    "vite": "^8.3.8"
+  }
+}
